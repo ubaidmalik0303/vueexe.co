@@ -1,13 +1,95 @@
-.header{
-    display: flex;
-    background-color: transparent;
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    padding: 10px;
+.header {
+  display: flex;
+  background-color: transparent;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 100;
+  width: 100%;
+  padding: 15px 50px;
+  transition: all 200ms linear;
 }
 
-.header > h1{
-    font-family: 'Lobster', cursive;
+.sticky {
+  position: fixed;
+  top: 0;
+  z-index: 1000;
+  background-color: white;
+  border-bottom: 1px solid rgb(236, 236, 236);
+  padding: 5px 40px;
+}
+
+.sticky > h1 {
+  color: black !important;
+}
+
+.sticky > ul > li > a {
+  color: black !important;
+}
+
+.header > h1 {
+  font-family: "Poppins", sans-serif;
+  color: white;
+  font-weight: 700;
+}
+
+.header > ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  align-self: center;
+  margin-left: auto;
+}
+
+.header > ul > li {
+  margin: 0 10px;
+}
+
+.header > ul > li > a {
+  text-decoration: none;
+  color: white;
+  font-family: "Poppins", sans-serif;
+  font-weight: 500;
+}
+
+.scrollup {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  z-index: 1000;
+  color: black;
+  cursor: pointer;
+  animation: scrollBtnAnimation 10s linear alternate infinite;
+}
+
+@keyframes scrollBtnAnimation {
+  0% {
+    transform: translateY(0);
+  }
+  5% {
+    transform: translateY(-20px);
+  }
+  10% {
+    transform: translateY(0);
+    transform: rotateX(0deg);
+  }
+  15% {
+    transform: rotateX(90deg);
+  }
+  16% {
+    transform: rotateX(0deg);
+  }
+}
+
+@media screen and (max-width: 650px){
+  .header{
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .header > ul{
+    margin: 0;
+  }
 }

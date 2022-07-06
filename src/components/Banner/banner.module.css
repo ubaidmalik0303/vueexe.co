@@ -1,0 +1,88 @@
+.banner {
+  height: 100vh;
+  width: 100vw;
+  overflow: hidden;
+  position: relative;
+  background-color: #dedfe2;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.banner::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 55%;
+  height: 100%;
+  background-color: #68bbcb;
+  clip-path: polygon(0 0, 79% 0, 100% 100%, 0 100%);
+}
+
+.banner > div {
+  position: relative;
+  z-index: 100;
+  text-align: center;
+  width: 70%;
+}
+
+.banner > div > h1 {
+  font-size: 50px;
+  font-weight: 700;
+  color: black;
+  font-family: "Poppins", sans-serif;
+}
+
+.banner > div > p {
+  font-size: 20px;
+  font-weight: 500;
+  font-family: "Poppins", sans-serif;
+  line-height: 26px;
+  margin: 20px 0;
+  color: rgba(121, 109, 109, 0.829);
+}
+
+.banner > div > button {
+  border: none;
+  width: 200px;
+  height: 40px;
+  background-color: transparent;
+  outline: 1px solid black;
+  cursor: pointer;
+  font-family: "Poppins", sans-serif;
+  font-weight: 700;
+  transition: all 200ms linear;
+}
+
+.banner > div > button:hover {
+  color: white;
+  background-color: rgba(0, 0, 0, 0.418);
+}
+
+.scrolldown{
+  position: relative;
+  top: 80px;
+  display: block;
+  color: white;
+  animation: scrollBtnAnimation 5s linear alternate infinite;
+}
+
+@keyframes scrollBtnAnimation {
+  0%{
+    transform: translateY(0);
+  }
+  5%{
+    transform: translateY(-20px);
+  }
+  10%{
+    transform: translateY(0);
+    transform: rotateX(0deg);
+  }
+  15%{
+    transform: rotateX(90deg);
+  }
+  16%{
+    transform: rotateX(0deg);
+  }
+}

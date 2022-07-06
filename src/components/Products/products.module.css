@@ -1,0 +1,44 @@
+.products h2 {
+  font-family: "Poppins", sans-serif;
+  font-weight: 700;
+  text-align: center;
+  font-size: 26px;
+  margin: 40px 0 20px 0;
+}
+
+.products img{
+  height: 200px;
+  width: 100%;
+}
+
+.products h3{
+  font-family: "Poppins", sans-serif;
+  font-weight: 700;
+  font-size: 20px;
+}
+
+.products p{
+  font-family: "Poppins", sans-serif;
+  font-weight: 500;
+  font-size: 14px;
+  color: rgb(112, 112, 112);
+}
+
+.products a{
+  color: white;
+  text-decoration: none;
+  font-family: "Poppins", sans-serif;
+  font-weight: 500;
+  padding: 5px 20px;
+  background-color: #68BBCB;
+  transition: all 200ms linear;
+}
+
+.products a:hover{
+  color: white;
+  background-color: #68bacbd3;
+}
+
+.bglightgrey{
+  background-color: rgba(233, 231, 231, 0.548);
+}
