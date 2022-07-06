@@ -1,7 +1,27 @@
 .contact h2 {
   font-family: "Poppins", sans-serif;
   font-weight: 700;
-  text-align: center;
+}
+
+.contact p {
+  font-family: "Poppins", sans-serif;
+  font-weight: 200;
+  font-size: 18px;
+}
+
+.contact span > i{
+  font-size: 50px !important;
+}
+
+.contact span {
+  font-family: "Poppins", sans-serif;
+  font-weight: 500;
+  font-size: 26px;
+}
+
+.contact a{
+    text-decoration: none;
+    color: black;
 }
 
 .form {
@@ -9,7 +29,8 @@
   flex-direction: column;
 }
 
-.form > input, .form > textarea {
+.form > input,
+.form > textarea {
   border: none;
   outline: none;
   background-color: rgb(236, 234, 234);
@@ -19,8 +40,8 @@
   margin: 5px 0;
 }
 
-.form > input[type=submit]{
-    background-color: #68BBCB;
-    color: white;
-    font-weight: 500;
+.form > input[type="submit"] {
+  background-color: #68bbcb;
+  color: white;
+  font-weight: 500;
 }

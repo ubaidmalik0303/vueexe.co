@@ -43,10 +43,12 @@
   color: rgba(121, 109, 109, 0.829);
 }
 
-.banner > div > button {
+.banner > div > a.visitstore {
+  text-decoration: none;
+  color: black;
   border: none;
   width: 200px;
-  height: 40px;
+  padding: 10px 25px;
   background-color: transparent;
   outline: 1px solid black;
   cursor: pointer;
@@ -55,7 +57,7 @@
   transition: all 200ms linear;
 }
 
-.banner > div > button:hover {
+.banner > div > a.visitstore:hover {
   color: white;
   background-color: rgba(0, 0, 0, 0.418);
 }
